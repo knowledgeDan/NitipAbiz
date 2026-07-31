@@ -1,0 +1,121 @@
+# Auto detect text files and normalize line endings to LF
+* text=auto eol=lf
+
+# ====================
+# SOURCE CODE
+# ====================
+*.php text diff=php
+*.blade.php text diff=html
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+*.json text
+*.css text diff=css
+*.scss text
+*.sass text
+*.less text
+*.html text diff=html
+*.xml text
+*.sql text
+
+# ====================
+# DOCUMENTATION
+# ====================
+*.md text diff=markdown
+*.txt text
+*.rtf text
+LICENSE text
+README text
+CONTRIBUTING text
+SECURITY text
+
+# ====================
+# CONFIGURATION
+# ====================
+*.cnf text
+*.conf text
+*.config text
+*.ini text
+*.properties text
+*.toml text
+*.yaml text
+*.yml text
+.env* text
+.editorconfig text
+.gitattributes text
+.gitignore text
+
+# ====================
+# SCRIPTS
+# ====================
+*.sh text eol=lf
+*.bash text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# ====================
+# BINARY FILES
+# ====================
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.webp binary
+
+# Fonts
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.rar binary
+*.7z binary
+
+# Documents
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+
+# Databases
+*.sqlite binary
+*.db binary
+
+# Other
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+
+# ====================
+# EXPORT IGNORE
+# ====================
+# Exclude from git archive exports
+/.github export-ignore
+/.vscode export-ignore
+/tests export-ignore
+/node_modules export-ignore
+/vendor export-ignore
+/.editorconfig export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/phpunit.xml export-ignore
+/.phpunit.result.cache export-ignore
+CHANGELOG.md export-ignore
+CONTRIBUTING.md export-ignore
+.styleci.yml export-ignore
+package-lock.json export-ignore
+composer.lock export-ignore

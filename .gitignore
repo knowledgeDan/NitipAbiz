@@ -1,0 +1,135 @@
+# ====================
+# CRITICAL: SECURITY FILES
+# ====================
+# Never commit environment files with credentials
+.env
+.env.*
+!.env.example
+.env.backup
+.env.production
+.env.local
+.env.staging
+
+# Private keys and certificates
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+/storage/*.key
+/storage/oauth-*.key
+
+# Authentication & credentials
+/auth.json
+composer.phar
+
+# ====================
+# APPLICATION FILES
+# ====================
+# Dependencies
+/node_modules
+/vendor
+
+# Build artifacts
+/public/build
+/public/hot
+/public/storage
+/public/mix-manifest.json
+
+# Storage & uploads (CRITICAL: User uploaded files)
+/storage/app/private/*
+/storage/app/public/*
+!/storage/app/.gitkeep
+!/storage/app/public/.gitkeep
+/storage/framework/cache/*
+!/storage/framework/cache/.gitkeep
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitkeep
+/storage/framework/testing/*
+!/storage/framework/testing/.gitkeep
+/storage/framework/views/*
+!/storage/framework/views/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/pail
+
+# ====================
+# SENSITIVE DATA
+# ====================
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+database/*.sqlite
+database/*.sqlite3
+
+# Backups (may contain sensitive data)
+*.sql
+*.sql.gz
+*.dump
+backup/
+backups/
+
+# Logs (may contain sensitive information)
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ====================
+# IDE & EDITOR FILES
+# ====================
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+.phpactor.json
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ====================
+# TESTING & CACHE
+# ====================
+/.phpunit.cache
+.phpunit.result.cache
+/coverage
+/.phpunit.result.cache
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
+
+# ====================
+# OS FILES
+# ====================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ====================
+# DEPLOYMENT
+# ====================
+Homestead.json
+Homestead.yaml
+/.vagrant
+.deployment
+
+# ====================
+# TEMPORARY FILES
+# ====================
+temp/
+tmp/
+*.tmp
+*.bak
+*.cache
