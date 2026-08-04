@@ -25,12 +25,24 @@
                         </svg>
                         <span class="ml-4 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Pesanan</span>
                     </a>
+                    <a href="{{ route('profile') }}" class="flex items-center px-4 py-3 hover:bg-blue-700 transition-colors">
+                        <svg class="w-6 h-6 min-w-[24px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        <span class="ml-4 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Profil</span>
+                    </a>
                 @elseif(auth()->user()->role === 'seller')
                     <a href="{{ route('dashboard') }}" class="flex items-center px-4 py-3 hover:bg-blue-700 transition-colors">
                         <svg class="w-6 h-6 min-w-[24px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                         </svg>
                         <span class="ml-4 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Kantin Saya</span>
+                    </a>
+                    <a href="{{ route('profile') }}" class="flex items-center px-4 py-3 hover:bg-blue-700 transition-colors">
+                        <svg class="w-6 h-6 min-w-[24px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        <span class="ml-4 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Profil</span>
                     </a>
                 @elseif(auth()->user()->role === 'courier')
                     <a href="{{ route('dashboard') }}" class="flex items-center px-4 py-3 hover:bg-blue-700 transition-colors">
@@ -39,6 +51,12 @@
                         </svg>
                         <span class="ml-4 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Pengiriman</span>
                     </a>
+                    <a href="{{ route('profile') }}" class="flex items-center px-4 py-3 hover:bg-blue-700 transition-colors">
+                        <svg class="w-6 h-6 min-w-[24px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        <span class="ml-4 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Profil</span>
+                    </a>
                 @elseif(auth()->user()->role === 'system_manager')
                     <a href="{{ route('dashboard') }}" class="flex items-center px-4 py-3 hover:bg-blue-700 transition-colors">
                         <svg class="w-6 h-6 min-w-[24px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,6 +64,12 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                         <span class="ml-4 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Manajemen</span>
+                    </a>
+                    <a href="{{ route('profile') }}" class="flex items-center px-4 py-3 hover:bg-blue-700 transition-colors">
+                        <svg class="w-6 h-6 min-w-[24px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        <span class="ml-4 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Profil</span>
                     </a>
                 @endif
                 

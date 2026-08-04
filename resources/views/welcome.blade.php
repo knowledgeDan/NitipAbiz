@@ -52,8 +52,11 @@
                         Buka Dashboard
                     </a>
                 @else
-                    <a href="{{ route('login') }}" class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium">
-                        Masuk
+                    <a href="{{ route('login.user') }}" class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                        Masuk Sebagai Siswa
+                    </a>
+                    <a href="{{ route('login.seller') }}" class="px-8 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors font-medium">
+                        Masuk Sebagai Penjual
                     </a>
                     <a href="{{ route('register') }}" class="px-8 py-3 bg-white border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors font-medium">
                         Daftar Sekarang
