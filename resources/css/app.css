@@ -1,4 +1,6 @@
-@import 'tailwindcss';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -9,3 +11,31 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+@layer components {
+    .nav-item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav-indicator {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px; /* Small default width for the line */
+        background-color: #f97316; /* Orange color */
+        width: 0; /* Initially hidden */
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-item:hover .nav-indicator,
+    .nav-item.active .nav-indicator {
+        width: 125%; /* Expands to 125% of the item's width */
+        left: 0;
+    }
+
+    .nav-item.active .nav-indicator {
+        background-color: #f97316; /* Keep orange for active */
+    }
+}
+
